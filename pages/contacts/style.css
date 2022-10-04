@@ -1,8 +1,8 @@
 #contact {
-    display: table;
-    margin: auto;
-    width: 100%;
-    max-width: 550px;
+   display: table;
+   margin: auto;
+   width: 100%;
+   max-width: 480px;
 }
 
 #contact label {
@@ -11,54 +11,101 @@
 }
 
 #contact input, #contact textarea, #contact button {
-    font-family: inherit;
-    font-size: inherit;
-    width: 100%;
-    padding: .3rem;
-    border: 1px solid rgb(128, 33, 49);
-    border-radius: .3rem;
-    border-bottom: 3px solid rgb(128, 33, 49);
- }
+   font-family: inherit;
+   font-size: inherit;
+   width: 100%;
+   padding: .3rem;
+   border: 1px solid green;
+   border-radius: .3rem;
+   border-bottom: 3px solid green;
+}
 
- #contact textarea {
-    min-height: 2rem;
-    height: 6rem;
-    resize: vertical;
-    max-height: 5rem;
- }
+#contact textarea {
+   min-height: 2rem;
+   height: 6rem;
+   resize: vertical;
+}
 
- #contact button {
-    border: none;
-    background: linear-gradient(rgb(251, 38, 251), rgb(140, 0, 140));
-    color: white;
-    width: auto;
-    padding: .5rem 1rem;
-    cursor: pointer;
- }
+#contact button {
+   border: none;
+   background: linear-gradient(rgb(251, 38, 251), rgb(140, 0, 140));
+   color: white;
+   width: auto;
+   padding: .5rem 1rem;
+   cursor: pointer;
+}
 
- #contact button:hover {
-    background: linear-gradient(rgb(241, 132, 241),rgb(190, 0, 190));
-    /* Desabilita cliques */
-    pointer-events: none;
- }
+#contact button:hover {
+   background: linear-gradient(rgb(241, 132, 241), rgb(190, 0, 190));
+}
 
- .links {
-    display: table;
-    margin: auto;
-    padding-bottom: 1rem;
- }
+/* Campos de formulário inválido */
+#contact input:invalid, #contact textarea:invalid {
+   background-color: rgb(255, 227, 227);
+   border: 1px solid red;
+   border-bottom: 3px solid red;
+}
 
- .links a {
-    display: flex;
-    align-items: center;
-    padding: .4rem;
- }
+/* Botão de formulário inválido */
+#contact:invalid button {
+   background: linear-gradient(rgb(210, 210, 210), grey);
+   /* Desabilita cliques */
+   pointer-events: none;
+}
 
- .links span {
-    display: inline-block;
-    margin-left: .3rem;
- }
+/* Outros contatos */
 
- .links i {
-    font-size: 1.4rem;
- }
+.menu-contacts {
+   text-align: center;
+   margin-bottom: 1rem;
+}
+
+.menu-contacts a {
+   display: inline-block;
+   padding: .25rem;
+}
+
+.menu-contacts i[class~=fa-facebook] {
+   color: #1877f2;
+}
+
+.menu-contacts i[class~=fa-youtube] {
+   color: #ff0000;
+}
+
+.menu-contacts i[class~=fa-github] {
+   color: #424242;
+}
+
+.menu-contacts i[class~=fa-envelope] {
+   color: #4682b4;
+}
+
+.menu-contacts i[class~=fa-whatsapp] {
+   color: #128c7e;
+}
+
+.menu-contacts i[class~=fa-phone] {
+   color: #000;
+}
+
+.links {
+  display: table;
+  margin: auto;
+  padding-bottom: 1rem;
+}
+
+.links a {
+  display: flex;
+  align-items: center;
+  padding: .4rem;
+}
+
+.links span {
+  display: inline-block;
+  margin-left: .3rem;
+}
+
+.links i {
+  font-size: 1.4rem;
+}

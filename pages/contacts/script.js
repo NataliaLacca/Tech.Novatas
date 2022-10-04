@@ -1,2 +1,2 @@
 // Altera o <title> da página:
-getTitle('Faça contato');
+getTitle('Faça contato'); 
